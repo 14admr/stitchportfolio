@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Alesundreau Dale Ratuiste | Full Stack Developer</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./images/android-chrome-512x512.png" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://14admr.github.io/" />
+    <meta property="og:title" content="Alesundreau Dale Ratuiste | Full Stack Developer" />
+    <meta property="og:description"
+        content="Full Stack Web Developer based in the Philippines, specializing in building scalable and visually stunning digital experiences using the MERN stack." />
+    <meta property="og:image" content="./images/android-chrome-512x512.png" />
+    <meta property="og:site_name" content="Alesundreau Dale Ratuiste" />
+    <meta property="og:locale" content="en_PH" />
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Full Stack Web Developer based in the Philippines, specializing in building scalable and visually stunning digital experiences using the MERN stack." />
+    <meta name="author" content="Alesundreau Dale Ratuiste" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- Tailwind Config -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#293452",
+                        "surface-variant": "#293452",
+                        "primary": "#97cbff",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#001f24",
+                        "secondary-container": "#3b4665",
+                        "on-tertiary-container": "#00454e",
+                        "inverse-surface": "#dae1ff",
+                        "on-surface": "#dae1ff",
+                        "on-secondary-container": "#aab4d9",
+                        "tertiary": "#00daf3",
+                        "on-secondary-fixed": "#0f1a37",
+                        "on-primary": "#003353",
+                        "primary-fixed-dim": "#97cbff",
+                        "tertiary-fixed": "#9cf0ff",
+                        "surface-tint": "#97cbff",
+                        "tertiary-container": "#00bacf",
+                        "primary-container": "#53b0fb",
+                        "secondary": "#bbc5eb",
+                        "background": "#06122e",
+                        "error": "#ffb4ab",
+                        "surface-container-lowest": "#020c29",
+                        "on-secondary": "#252f4d",
+                        "surface-container-low": "#0f1a37",
+                        "surface-bright": "#2e3856",
+                        "inverse-on-surface": "#252f4d",
+                        "secondary-fixed-dim": "#bbc5eb",
+                        "tertiary-fixed-dim": "#00daf3",
+                        "on-primary-fixed": "#001d33",
+                        "on-tertiary-fixed-variant": "#004f58",
+                        "surface": "#06122e",
+                        "on-background": "#dae1ff",
+                        "outline-variant": "#404851",
+                        "error-container": "#93000a",
+                        "on-primary-container": "#004169",
+                        "surface-container": "#131e3b",
+                        "outline": "#89919c",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed": "#cee5ff",
+                        "surface-container-high": "#1e2946",
+                        "on-primary-fixed-variant": "#004a76",
+                        "surface-dim": "#06122e",
+                        "on-tertiary": "#00363d",
+                        "on-surface-variant": "#bfc7d2",
+                        "secondary-fixed": "#dae1ff",
+                        "inverse-primary": "#00639b",
+                        "on-secondary-fixed-variant": "#3b4665"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            }
+        }
+    </script>
+</head>
+
+<body class="selection:bg-tertiary/30 selection:text-tertiary">
+
+    <!-- TopNavBar -->
+    <nav aria-label="Main navigation"
+        class="fixed top-0 w-full z-50 bg-[#06122e]/80 backdrop-blur-xl shadow-[0_20px_40px_rgba(218,225,255,0.04)]">
+        <div class="flex justify-between items-center max-w-7xl mx-auto px-12 h-24">
+            <a class="text-2xl font-black tracking-tighter text-[#dae1ff] font-['Inter']" href="#about"
+                aria-label="LUMINARY — go to top">LUMINARY</a>
+            <div class="hidden md:flex items-center gap-8" role="list">
+                <a class="text-[#aab4d9] hover:text-[#dae1ff] transition-colors font-['Inter'] tracking-tight"
+                    href="#about" role="listitem">About</a>
+                <a class="text-[#97cbff] border-b-2 border-[#97cbff] pb-1 font-['Inter'] tracking-tight"
+                    href="#projects" aria-current="page" role="listitem">Projects</a>
+                <a class="text-[#aab4d9] hover:text-[#dae1ff] transition-colors font-['Inter'] tracking-tight"
+                    href="#arsenal" role="listitem">Arsenal</a>
+                <a class="text-[#aab4d9] hover:text-[#dae1ff] transition-colors font-['Inter'] tracking-tight"
+                    href="#contact" role="listitem">Contact</a>
+            </div>
+            <a href="./AlesundreauDaleRatuiste_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                aria-label="Download resume (opens PDF in new tab)"
+                class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-3 rounded-xl font-bold tracking-tight hover:scale-95 duration-200 ease-in-out">
+                Hire Me
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section aria-labelledby="hero-heading"
+            class="relative min-h-[921px] flex items-center overflow-hidden px-12 max-w-7xl mx-auto pt-24" id="about">
+            <div class="absolute top-0 right-0 -z-10 w-full h-full" aria-hidden="true">
+                <div
+                    class="absolute top-1/2 right-0 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px]">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="order-2 lg:order-1">
+                    <span
+                        class="inline-block py-1 px-3 mb-6 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase"
+                        aria-label="Current status: Available for hire">Available for hire</span>
+                    <h1 id="hero-heading"
+                        class="text-6xl md:text-8xl font-black text-on-surface tracking-tighter leading-[0.9] mb-8">
+                        Alesundreau <br /> Dale <span class="text-tertiary">Ratuiste.</span>
+                    </h1>
+                    <p class="text-xl text-on-surface-variant leading-relaxed max-w-xl mb-10 font-medium">
+                        A Full Stack Web Developer based in the Philippines. I specialize in building highly functional,
+                        scalable, and visually stunning digital experiences using the MERN stack.
+                    </p>
+                    <div class="flex flex-wrap gap-6">
+                        <a href="#projects"
+                            class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-xl font-bold text-lg hover:scale-95 transition-all"
+                            aria-label="View my work — scroll to Projects section">
+                            View My Work
+                        </a>
+                        <a href="./AlesundreauDaleRatuiste_Resume.pdf" target="_blank" rel="noopener noreferrer"
+                            class="bg-surface-container-high text-on-surface px-10 py-4 rounded-xl font-bold text-lg border border-outline-variant/15 hover:bg-surface-container-highest transition-all"
+                            aria-label="Download CV (opens PDF in new tab)">
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                    <div class="relative w-72 h-72 md:w-[450px] md:h-[450px]">
+                        <div aria-hidden="true"
+                            class="absolute inset-0 rounded-full border-[12px] border-surface-container-high/50 animate-pulse">
+                        </div>
+                        <img alt="Alesundreau Dale Ratuiste — professional portrait"
+                            class="w-full h-full object-cover rounded-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP8OqBjV8h6WjLXlZiigxbLK50volfqRxyUMf8hAD95OdqJv8DvDuaoamOkQWWL2A4ctsZBCintL6v6EasYBkXiemgM4QBGbFYXFOjx5CjAYzMlhp4WRPQwKi5tCbxCsrViIX1DlIEVq1Pnhods4BqeJ-FX_en3DpB19xLwDqhx91qPq0c3JPF4gYG21IJxCXE_oFtcXnP2s2fVxpAVgokqeM4Zu4J-6lITpcUaVugsjLU0WKrWDCiGfQpiCZBEBROkis8mq394tv" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section aria-labelledby="projects-heading" class="py-32 px-12 bg-surface-container-low" id="projects">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                    <div>
+                        <h2 id="projects-heading" class="text-5xl font-black tracking-tighter mb-4 text-on-surface">
+                            Curated Projects</h2>
+                        <p class="text-on-surface-variant max-w-lg text-lg">A selection of my architectural approaches
+                            to problem-solving and software design.</p>
+                    </div>
+                    <div class="flex gap-4" aria-hidden="true">
+                        <span class="text-tertiary font-bold tracking-widest uppercase text-sm">Scroll for more</span>
+                        <span class="material-symbols-outlined text-tertiary">arrow_forward</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                    <!-- Project 1 -->
+                    <article
+                        class="group bg-surface-container-high rounded-xl overflow-hidden hover:translate-y-[-8px] transition-all duration-300"
+                        aria-label="Project: E-commerce API">
+                        <div class="h-64 overflow-hidden">
+                            <img alt="Screenshot of E-commerce API documentation with dark mode aesthetic"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxSzHpJrcM3fMoY8Z9OzSRhk-goSGMYs8wRggimCSBteEedNCqYEleNqoaqoxXEql8ZIQnSgsYQYeAU2-GbCfk8n5S7zOhyKl0wnWc2ZeejU1j3VakUCEuZGWy16vNNtCcqnWA_WkH77geuwOqcJeaOp8nwc1hUATmJRiEe1qLrcT2yBYNr3UUAEsRzuqJCNv79iHjObh-sfkzpoXx6_nlOIAS9EcHkDDe-12G6uGQRiUu5IgzJUc_ZcLRL4tLbIITKCQFibonXeGT" />
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-on-surface">E-commerce API</h3>
+                            <p class="text-on-surface-variant mb-6 text-sm leading-relaxed">High-performance REST API
+                                supporting scalable transactions and inventory management.</p>
+                            <div class="flex flex-wrap gap-2 mb-6" aria-label="Technologies used">
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">Node.js</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">Express</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">MongoDB</span>
+                            </div>
+                            <a class="text-tertiary font-bold text-sm tracking-widest uppercase flex items-center gap-2 hover:underline"
+                                href="#" aria-label="Explore E-commerce API project">
+                                Explore Project <span class="material-symbols-outlined text-xs"
+                                    aria-hidden="true">north_east</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article
+                        class="group bg-surface-container-high rounded-xl overflow-hidden hover:translate-y-[-8px] transition-all duration-300"
+                        aria-label="Project: Course Booking App">
+                        <div class="h-64 overflow-hidden">
+                            <img alt="Screenshot of Course Booking App dashboard with data visualizations"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZVLoX6b_p0rmyE5YWZgAx3F7L7alahyqw-9PzAz9lwwDqubEDpHYeF55QznUO19VAebzg__qBexFkRdJHCLQAYXXpRGJ1GvS6xWh3bNFSzUYjUeiUih78AJ2UR1h54ON4WZDa1yYE-4uNcX_dAoW2cl8PEtYpEWc1BQPuZ6-1QV2WhwaqU3dTyHjyH_znLRGWe9gCBplStX4mf2IekGpzSo-7rHbM5bgSrYMrnONCwYmigZUDddMC5jOZ5XH92n2ZS-izERyKvfBy" />
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-on-surface">Course Booking App</h3>
+                            <p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Educational platform
+                                facilitating seamless enrollment and dynamic course content management.</p>
+                            <div class="flex flex-wrap gap-2 mb-6" aria-label="Technologies used">
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">React</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">Redux</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">Firebase</span>
+                            </div>
+                            <a class="text-tertiary font-bold text-sm tracking-widest uppercase flex items-center gap-2 hover:underline"
+                                href="#" aria-label="Explore Course Booking App project">
+                                Explore Project <span class="material-symbols-outlined text-xs"
+                                    aria-hidden="true">north_east</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article
+                        class="group bg-surface-container-high rounded-xl overflow-hidden hover:translate-y-[-8px] transition-all duration-300"
+                        aria-label="Project: Fintech Dashboard">
+                        <div class="h-64 overflow-hidden">
+                            <img alt="Screenshot of Fintech Dashboard with glowing neon chart lines and financial metrics"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw3BaqStvh3Of6OBN_HEhTANYZJSt6SHfbgVLaus0a_Jift6KyPK9d5wEGQt7lscPreM8iRfQCytnyrOjNTk_YemTitlr1cJH1L7fmWGNCs7PbIZKjhSnFcPwFP2LhFPemhR9J0EmX6cmhwPecTnScVpN1u0CsyA2YmLAhWm7q_vzV3cqMqDL3iui4YYlQOxmh_2wAaLAjiaMBVYfmXiMUCme9Fh67xE_LKbmL-t-H-Q4lG9Y9VyTVtLEcxLsgNlClbFHk-OcsblYD" />
+                        </div>
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-on-surface">Fintech Dashboard</h3>
+                            <p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Real-time data visualization
+                                tool for monitoring complex financial ecosystems.</p>
+                            <div class="flex flex-wrap gap-2 mb-6" aria-label="Technologies used">
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">Next.js</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">Tailwind</span>
+                                <span
+                                    class="px-3 py-1 bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase rounded-full">D3.js</span>
+                            </div>
+                            <a class="text-tertiary font-bold text-sm tracking-widest uppercase flex items-center gap-2 hover:underline"
+                                href="#" aria-label="Explore Fintech Dashboard project">
+                                Explore Project <span class="material-symbols-outlined text-xs"
+                                    aria-hidden="true">north_east</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section (The Arsenal) -->
+        <section aria-labelledby="arsenal-heading" class="py-32 px-12 max-w-7xl mx-auto" id="arsenal">
+            <div class="text-center mb-24">
+                <h2 id="arsenal-heading" class="text-5xl font-black tracking-tighter mb-6">Technical Arsenal</h2>
+                <div class="w-24 h-1 bg-tertiary mx-auto" aria-hidden="true"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+
+                <!-- Front End -->
+                <div class="p-10 bg-surface-container-low rounded-xl border border-outline-variant/10"
+                    aria-label="Front End technologies">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="material-symbols-outlined text-tertiary text-4xl" aria-hidden="true">html</span>
+                        <h3 class="text-xl font-bold uppercase tracking-widest">Front End</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2" aria-hidden="true">code</span>
+                            <span class="text-xs font-bold">HTML5</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2" aria-hidden="true">palette</span>
+                            <span class="text-xs font-bold">CSS3</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2"
+                                aria-hidden="true">javascript</span>
+                            <span class="text-xs font-bold">ES6+</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2"
+                                aria-hidden="true">grid_view</span>
+                            <span class="text-xs font-bold">React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Full Stack -->
+                <div class="p-10 bg-surface-container-low rounded-xl border border-outline-variant/10"
+                    aria-label="Full Stack MERN technologies">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="material-symbols-outlined text-tertiary text-4xl" aria-hidden="true">hub</span>
+                        <h3 class="text-xl font-bold uppercase tracking-widest">Full Stack</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2" aria-hidden="true">database</span>
+                            <span class="text-xs font-bold">MongoDB</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2" aria-hidden="true">dns</span>
+                            <span class="text-xs font-bold">Express</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2" aria-hidden="true">layers</span>
+                            <span class="text-xs font-bold">React</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2"
+                                aria-hidden="true">developer_board</span>
+                            <span class="text-xs font-bold">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operations -->
+                <div class="p-10 bg-surface-container-low rounded-xl border border-outline-variant/10"
+                    aria-label="Operations and developer tools">
+                    <div class="flex items-center gap-4 mb-8">
+                        <span class="material-symbols-outlined text-tertiary text-4xl"
+                            aria-hidden="true">terminal</span>
+                        <h3 class="text-xl font-bold uppercase tracking-widest">Operations</h3>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2"
+                                aria-hidden="true">account_tree</span>
+                            <span class="text-xs font-bold">Git</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2"
+                                aria-hidden="true">cloud_upload</span>
+                            <span class="text-xs font-bold">Postman</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2" aria-hidden="true">api</span>
+                            <span class="text-xs font-bold">Heroku</span>
+                        </div>
+                        <div class="flex flex-col items-center p-4 bg-surface-container-high rounded-lg">
+                            <span class="material-symbols-outlined text-primary mb-2"
+                                aria-hidden="true">integration_instructions</span>
+                            <span class="text-xs font-bold">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section aria-labelledby="contact-heading" class="py-32 px-12 bg-surface-container-low" id="contact">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                    <div class="h-full">
+                        <h2 id="contact-heading" class="text-5xl font-black tracking-tighter mb-6">Let's Build Something
+                        </h2>
+                        <p class="text-on-surface-variant text-lg mb-12">I'm currently looking for new opportunities.
+                            Whether you have a question or just want to say hi, my inbox is always open.</p>
+                        <div
+                            class="relative w-full h-[400px] rounded-xl overflow-hidden grayscale contrast-125 mb-10 border border-outline-variant/20">
+                            <div class="absolute inset-0 bg-primary/5 pointer-events-none" aria-hidden="true"></div>
+                            <img alt="Aerial view of city representing location in the Philippines"
+                                class="w-full h-full object-cover"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAldIvrPtwg4QmSYNT_sWzxY-4Cirn6knzJ2NuP2-xilBBanvW2wzP6qv5mgNUpMTgOTpRzcn03q86YlJTr2YyO0KYq0EXPggBsW4Hm8LlK7SumE9KwCqZagj1bBBMbD-0p8BknEK3OTHrnMXnySb0LGGRmAxtp2inVmBAIGQlTgpwua0QzgPP8p5Ky1w4TtctP2ph17mh52pPdBM1ZAbFEGkwaCJZoEO7bs7LHmwMSob69f1lWIgjD_3UnDdakr1-coJ0oQkkv9iA2" />
+                        </div>
+                        <div class="flex gap-8">
+                            <a class="text-on-surface-variant hover:text-tertiary transition-colors flex items-center gap-2"
+                                href="https://www.linkedin.com/in/alesundreau-dale-ratuiste/" target="_blank"
+                                rel="noopener noreferrer" aria-label="Visit LinkedIn profile (opens in new tab)">
+                                <span class="material-symbols-outlined" aria-hidden="true">link</span> LinkedIn
+                            </a>
+                            <a class="text-on-surface-variant hover:text-tertiary transition-colors flex items-center gap-2"
+                                href="https://github.com/14admr" target="_blank" rel="noopener noreferrer"
+                                aria-label="Visit GitHub profile (opens in new tab)">
+                                <span class="material-symbols-outlined" aria-hidden="true">terminal</span> GitHub
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-surface-container-high p-12 rounded-xl shadow-2xl">
+                        <form class="space-y-8" aria-label="Contact form" novalidate>
+                            <div class="space-y-2">
+                                <label for="contact-name"
+                                    class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant">Full
+                                    Name</label>
+                                <input id="contact-name" name="name"
+                                    class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-6 py-4 text-on-surface focus:outline-none focus:border-tertiary transition-colors placeholder:text-outline-variant"
+                                    placeholder="John Doe" type="text" aria-required="true" autocomplete="name" />
+                            </div>
+                            <div class="space-y-2">
+                                <label for="contact-email"
+                                    class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant">Email
+                                    Address</label>
+                                <input id="contact-email" name="email"
+                                    class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-6 py-4 text-on-surface focus:outline-none focus:border-tertiary transition-colors placeholder:text-outline-variant"
+                                    placeholder="john@example.com" type="email" aria-required="true"
+                                    autocomplete="email" />
+                            </div>
+                            <div class="space-y-2">
+                                <label for="contact-message"
+                                    class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface-variant">Message</label>
+                                <textarea id="contact-message" name="message"
+                                    class="w-full bg-surface-container-lowest border border-outline-variant/30 rounded-lg px-6 py-4 text-on-surface focus:outline-none focus:border-tertiary transition-colors placeholder:text-outline-variant"
+                                    placeholder="Tell me about your project..." rows="5"
+                                    aria-required="true"></textarea>
+                            </div>
+                            <button
+                                class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-5 rounded-xl font-black text-lg tracking-tight hover:scale-[0.98] transition-transform"
+                                type="submit" aria-label="Send your message">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-20 border-t border-[#404851]/15 bg-[#06122e]" aria-label="Site footer">
+        <div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-12">
+            <div class="text-lg font-bold text-[#dae1ff] mb-8 md:mb-0">LUMINARY.</div>
+            <div class="text-[#aab4d9] font-['Inter'] text-sm tracking-[0.05em] uppercase mb-8 md:mb-0">
+                <small>© 2026 Alesundreau Dale Ratuiste. Built with intentional whitespace.</small>
+            </div>
+            <nav aria-label="Footer social links">
+                <ul class="flex gap-8 list-none">
+                    <li>
+                        <a class="text-[#aab4d9] hover:text-[#00daf3] transition-all font-['Inter'] text-sm tracking-[0.05em] uppercase underline-offset-4 hover:underline"
+                            href="https://www.linkedin.com/in/alesundreau-dale-ratuiste/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a class="text-[#aab4d9] hover:text-[#00daf3] transition-all font-['Inter'] text-sm tracking-[0.05em] uppercase underline-offset-4 hover:underline"
+                            href="https://github.com/14admr" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub profile (opens in new tab)">GitHub</a>
+                    </li>
+                    <li>
+                        <a class="text-[#aab4d9] hover:text-[#00daf3] transition-all font-['Inter'] text-sm tracking-[0.05em] uppercase underline-offset-4 hover:underline"
+                            href="https://gitlab.com/14admr" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitLab profile (opens in new tab)">GitLab</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+
+</html>

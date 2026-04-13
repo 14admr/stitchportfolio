@@ -1,0 +1,22 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+    background-color: #06122e;
+    color: #dae1ff;
+    font-family: 'Inter', sans-serif;
+}
+
+.glass-panel {
+    background: rgba(30, 41, 70, 0.6);
+    backdrop-filter: blur(20px);
+}
+
+.no-line {
+    border: none !important;
+}
+
+.tonal-transition {
+    transition: background-color 0.3s ease;
+}
