@@ -18,7 +18,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://14admr.github.io/" />
+    <meta property="og:url" content="https://14admr.github.io/stitchportfolio/" />
     <meta property="og:title" content="Alesundreau Dale Ratuiste | Full Stack Developer" />
     <meta property="og:description"
         content="Full Stack Web Developer based in the Philippines, specializing in building scalable and visually stunning digital experiences using the MERN stack." />
@@ -31,21 +31,31 @@
         content="Full Stack Web Developer based in the Philippines, specializing in building scalable and visually stunning digital experiences using the MERN stack." />
     <meta name="author" content="Alesundreau Dale Ratuiste" />
 
-    <!-- Tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Preconnect hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-        rel="stylesheet" />
+    <!-- LCP image preload -->
+    <link rel="preload" as="image"
+        href="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP8OqBjV8h6WjLXlZiigxbLK50volfqRxyUMf8hAD95OdqJv8DvDuaoamOkQWWL2A4ctsZBCintL6v6EasYBkXiemgM4QBGbFYXFOjx5CjAYzMlhp4WRPQwKi5tCbxCsrViIX1DlIEVq1Pnhods4BqeJ-FX_en3DpB19xLwDqhx91qPq0c3JPF4gYG21IJxCXE_oFtcXnP2s2fVxpAVgokqeM4Zu4J-6lITpcUaVugsjLU0WKrWDCiGfQpiCZBEBROkis8mq394tv" />
+
+    <!-- Google Fonts — async (non-render-blocking) -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <link rel="stylesheet" media="print"
+        onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" />
+    </noscript>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="./index.css" />
 
-    <!-- Tailwind Config -->
+    <!-- Tailwind Config (must be before CDN) -->
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -115,6 +125,9 @@
             }
         }
     </script>
+
+    <!-- Tailwind CDN (after config so theme is applied correctly) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 
 <body class="selection:bg-tertiary/30 selection:text-tertiary">
@@ -185,7 +198,8 @@
                         </div>
                         <img alt="Alesundreau Dale Ratuiste — professional portrait"
                             class="w-full h-full object-cover rounded-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP8OqBjV8h6WjLXlZiigxbLK50volfqRxyUMf8hAD95OdqJv8DvDuaoamOkQWWL2A4ctsZBCintL6v6EasYBkXiemgM4QBGbFYXFOjx5CjAYzMlhp4WRPQwKi5tCbxCsrViIX1DlIEVq1Pnhods4BqeJ-FX_en3DpB19xLwDqhx91qPq0c3JPF4gYG21IJxCXE_oFtcXnP2s2fVxpAVgokqeM4Zu4J-6lITpcUaVugsjLU0WKrWDCiGfQpiCZBEBROkis8mq394tv" />
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWP8OqBjV8h6WjLXlZiigxbLK50volfqRxyUMf8hAD95OdqJv8DvDuaoamOkQWWL2A4ctsZBCintL6v6EasYBkXiemgM4QBGbFYXFOjx5CjAYzMlhp4WRPQwKi5tCbxCsrViIX1DlIEVq1Pnhods4BqeJ-FX_en3DpB19xLwDqhx91qPq0c3JPF4gYG21IJxCXE_oFtcXnP2s2fVxpAVgokqeM4Zu4J-6lITpcUaVugsjLU0WKrWDCiGfQpiCZBEBROkis8mq394tv"
+                            fetchpriority="high" decoding="async" width="450" height="450" />
                     </div>
                 </div>
             </div>
@@ -215,7 +229,8 @@
                         <div class="h-64 overflow-hidden">
                             <img alt="Screenshot of E-commerce API documentation with dark mode aesthetic"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxSzHpJrcM3fMoY8Z9OzSRhk-goSGMYs8wRggimCSBteEedNCqYEleNqoaqoxXEql8ZIQnSgsYQYeAU2-GbCfk8n5S7zOhyKl0wnWc2ZeejU1j3VakUCEuZGWy16vNNtCcqnWA_WkH77geuwOqcJeaOp8nwc1hUATmJRiEe1qLrcT2yBYNr3UUAEsRzuqJCNv79iHjObh-sfkzpoXx6_nlOIAS9EcHkDDe-12G6uGQRiUu5IgzJUc_ZcLRL4tLbIITKCQFibonXeGT" />
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxSzHpJrcM3fMoY8Z9OzSRhk-goSGMYs8wRggimCSBteEedNCqYEleNqoaqoxXEql8ZIQnSgsYQYeAU2-GbCfk8n5S7zOhyKl0wnWc2ZeejU1j3VakUCEuZGWy16vNNtCcqnWA_WkH77geuwOqcJeaOp8nwc1hUATmJRiEe1qLrcT2yBYNr3UUAEsRzuqJCNv79iHjObh-sfkzpoXx6_nlOIAS9EcHkDDe-12G6uGQRiUu5IgzJUc_ZcLRL4tLbIITKCQFibonXeGT"
+                                loading="lazy" decoding="async" width="600" height="256" />
                         </div>
                         <div class="p-8">
                             <h3 class="text-2xl font-bold mb-3 text-on-surface">E-commerce API</h3>
@@ -244,7 +259,8 @@
                         <div class="h-64 overflow-hidden">
                             <img alt="Screenshot of Course Booking App dashboard with data visualizations"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZVLoX6b_p0rmyE5YWZgAx3F7L7alahyqw-9PzAz9lwwDqubEDpHYeF55QznUO19VAebzg__qBexFkRdJHCLQAYXXpRGJ1GvS6xWh3bNFSzUYjUeiUih78AJ2UR1h54ON4WZDa1yYE-4uNcX_dAoW2cl8PEtYpEWc1BQPuZ6-1QV2WhwaqU3dTyHjyH_znLRGWe9gCBplStX4mf2IekGpzSo-7rHbM5bgSrYMrnONCwYmigZUDddMC5jOZ5XH92n2ZS-izERyKvfBy" />
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZVLoX6b_p0rmyE5YWZgAx3F7L7alahyqw-9PzAz9lwwDqubEDpHYeF55QznUO19VAebzg__qBexFkRdJHCLQAYXXpRGJ1GvS6xWh3bNFSzUYjUeiUih78AJ2UR1h54ON4WZDa1yYE-4uNcX_dAoW2cl8PEtYpEWc1BQPuZ6-1QV2WhwaqU3dTyHjyH_znLRGWe9gCBplStX4mf2IekGpzSo-7rHbM5bgSrYMrnONCwYmigZUDddMC5jOZ5XH92n2ZS-izERyKvfBy"
+                                loading="lazy" decoding="async" width="600" height="256" />
                         </div>
                         <div class="p-8">
                             <h3 class="text-2xl font-bold mb-3 text-on-surface">Course Booking App</h3>
@@ -273,7 +289,8 @@
                         <div class="h-64 overflow-hidden">
                             <img alt="Screenshot of Fintech Dashboard with glowing neon chart lines and financial metrics"
                                 class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw3BaqStvh3Of6OBN_HEhTANYZJSt6SHfbgVLaus0a_Jift6KyPK9d5wEGQt7lscPreM8iRfQCytnyrOjNTk_YemTitlr1cJH1L7fmWGNCs7PbIZKjhSnFcPwFP2LhFPemhR9J0EmX6cmhwPecTnScVpN1u0CsyA2YmLAhWm7q_vzV3cqMqDL3iui4YYlQOxmh_2wAaLAjiaMBVYfmXiMUCme9Fh67xE_LKbmL-t-H-Q4lG9Y9VyTVtLEcxLsgNlClbFHk-OcsblYD" />
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw3BaqStvh3Of6OBN_HEhTANYZJSt6SHfbgVLaus0a_Jift6KyPK9d5wEGQt7lscPreM8iRfQCytnyrOjNTk_YemTitlr1cJH1L7fmWGNCs7PbIZKjhSnFcPwFP2LhFPemhR9J0EmX6cmhwPecTnScVpN1u0CsyA2YmLAhWm7q_vzV3cqMqDL3iui4YYlQOxmh_2wAaLAjiaMBVYfmXiMUCme9Fh67xE_LKbmL-t-H-Q4lG9Y9VyTVtLEcxLsgNlClbFHk-OcsblYD"
+                                loading="lazy" decoding="async" width="600" height="256" />
                         </div>
                         <div class="p-8">
                             <h3 class="text-2xl font-bold mb-3 text-on-surface">Fintech Dashboard</h3>
@@ -412,7 +429,8 @@
                             <div class="absolute inset-0 bg-primary/5 pointer-events-none" aria-hidden="true"></div>
                             <img alt="Aerial view of city representing location in the Philippines"
                                 class="w-full h-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAldIvrPtwg4QmSYNT_sWzxY-4Cirn6knzJ2NuP2-xilBBanvW2wzP6qv5mgNUpMTgOTpRzcn03q86YlJTr2YyO0KYq0EXPggBsW4Hm8LlK7SumE9KwCqZagj1bBBMbD-0p8BknEK3OTHrnMXnySb0LGGRmAxtp2inVmBAIGQlTgpwua0QzgPP8p5Ky1w4TtctP2ph17mh52pPdBM1ZAbFEGkwaCJZoEO7bs7LHmwMSob69f1lWIgjD_3UnDdakr1-coJ0oQkkv9iA2" />
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAldIvrPtwg4QmSYNT_sWzxY-4Cirn6knzJ2NuP2-xilBBanvW2wzP6qv5mgNUpMTgOTpRzcn03q86YlJTr2YyO0KYq0EXPggBsW4Hm8LlK7SumE9KwCqZagj1bBBMbD-0p8BknEK3OTHrnMXnySb0LGGRmAxtp2inVmBAIGQlTgpwua0QzgPP8p5Ky1w4TtctP2ph17mh52pPdBM1ZAbFEGkwaCJZoEO7bs7LHmwMSob69f1lWIgjD_3UnDdakr1-coJ0oQkkv9iA2"
+                                loading="lazy" decoding="async" width="800" height="400" />
                         </div>
                         <div class="flex gap-8">
                             <a class="text-on-surface-variant hover:text-tertiary transition-colors flex items-center gap-2"
